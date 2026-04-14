@@ -70,9 +70,38 @@ namespace Ejercicio_de_get_y_set_con_tryparse
 
                 {
 
+                    if(value >= 4 && value <= 100)
+
+                    {
+
+                        edad = value;
+
+                    }
+
+                    else
+
+                    {
+
+                        Console.WriteLine("La edad debe estar entre 4 y 100 años");
+
+
+                    }
+
 
 
                 }
+
+
+
+            }
+
+            public int Nota
+
+            {
+
+
+
+
 
 
 
