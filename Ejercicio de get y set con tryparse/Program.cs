@@ -166,7 +166,42 @@ namespace Ejercicio_de_get_y_set_con_tryparse
         static void Main(string[] args)
 
         {
+            Estudiante e = new Estudiante();
 
+            string nom;
+
+            int ed;
+
+            int not;
+
+            bool correcto;
+
+            do
+
+            {
+                Console.ReadKey();
+
+                Console.Clear();
+
+                Console.WriteLine("Ingrese el nombre del estudiante:_ ");
+
+                nom = Console.ReadLine();
+
+                e.Nombre = nom;
+
+            }
+
+            while (nom.Length < 4);
+
+            do
+
+            {
+                Console
+
+
+            }
+
+            
 
 
 
