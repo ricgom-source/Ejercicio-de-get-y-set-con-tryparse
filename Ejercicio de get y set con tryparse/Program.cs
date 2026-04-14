@@ -196,12 +196,34 @@ namespace Ejercicio_de_get_y_set_con_tryparse
             do
 
             {
-                Console
+                Console.ReadKey();
+
+                Console.Clear();
+
+                Console.WriteLine("Ingrese la edad del estudiante:_ ");
+
+                correcto = int.TryParse(Console.ReadLine(), out ed);
+
+                if (!correcto)
+
+                {
+
+                    Console.WriteLine("Debe ingresar una edad válida");
+
+                }
+
+                else
+
+                {
+
+                    e.Edad = ed;
+
+                }
 
 
             }
 
-            
+            while (!correcto || ed < 0 || ed > 100);
 
 
 
