@@ -99,33 +99,69 @@ namespace Ejercicio_de_get_y_set_con_tryparse
 
             {
 
+                get
+
+                {
+
+                    return nota;
+
+                }
 
 
+                set
+
+                {
+                    if(value>=0 && value <= 100)
+
+
+                    {
+
+                        nota = value;
+
+                    }
+
+                    else
+
+                    {
+
+                        Console.WriteLine("La nota debe estar entre 0 y 100");
+
+
+                    }
+
+
+
+                }
 
 
 
 
             }
 
+            public string Estado ()
+
+            {
+                if(nota>=61)
+
+                {
+                    return "Aprobado";
+
+                }
+
+                else
+
+                {
+
+                    return "Reprobado";
+
+
+                }
+
+            }
+
 
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         static void Main(string[] args)
 
